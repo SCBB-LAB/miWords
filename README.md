@@ -11,11 +11,6 @@ Here, we present miWords is a novel deep learning method specifically designed f
 
 miWords can be used directly from [this](https://scbb.ihbt.res.in/miWords) web server. This server implements trained models and can process both individual sequences or fasta files. The server generates a table deciphering T-Score for every sequence provided.
 
-## Package installation
-
-The latest version of the package can be downloaded from the GitHub [repository](https://github.com/SCBB-LAB/miWords).
-
-
 ## Requirements
 
 ```
@@ -41,3 +36,11 @@ The latest version of the package can be downloaded from the GitHub [repository]
 7. reve.py = Python script for sequence preprocessing.
 8. hyper_param.py = Python script build model implementing hyperparameter tuning
 ```
+
+## Package installation
+
+The latest version of the package can be downloaded from the GitHub [repository](https://github.com/SCBB-LAB/miWords).
+
+## Citation
+
+Citation: Gupta S, Saini V, Kumar R, Shankar R (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
