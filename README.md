@@ -27,3 +27,14 @@ The latest version of the package can be downloaded from the GitHub [repository]
 7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
 8. python module multiprocessing, Bio, bayesian-optimization 
 ```
+
+## File description
+
+```1. M1.sh = Module 1 execution script.
+2. program.py = Python script for detecting pre-miRNAs from sequences provided.
+3. model.h5 = Trained model transformer part.
+4. xgb_model.sav: Trained model XGBoost part.
+5. test = fasta sequence.
+6. tokenizer_penta.pickle = build tokenizer.
+7. reve.py = Python script for sequence preprocessing.
+```
