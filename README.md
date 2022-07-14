@@ -30,11 +30,13 @@ The latest version of the package can be downloaded from the GitHub [repository]
 
 ## File description
 
-```1. M1.sh = Module 1 execution script.
+```
+1. M1.sh = Module 1 execution script.
 2. program.py = Python script for detecting pre-miRNAs from sequences provided.
 3. model.h5 = Trained model transformer part.
 4. xgb_model.sav: Trained model XGBoost part.
 5. test = fasta sequence.
 6. tokenizer_penta.pickle = build tokenizer.
 7. reve.py = Python script for sequence preprocessing.
+8. hyper_param.py = Python script build model implementing hyperparameter tuning
 ```
