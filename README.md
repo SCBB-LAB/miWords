@@ -37,6 +37,20 @@ miWords can be used directly from [this](https://scbb.ihbt.res.in/miWords) web s
 8. hyper_param.py = Python script build model implementing hyperparameter tuning
 ```
 
+## Output description
+
+pre-miRNA detection module gives output in following format 
+```
+1. test.txt = Chunks wise probability score of the sequence provided.
+```
+
+## Running script
+
+To predict the pre-miRNAs, In parent directory execute following command:
+```
+sh M1.sh test
+```
+
 ## Package installation
 
 The latest version of the package can be downloaded from the GitHub [repository](https://github.com/SCBB-LAB/miWords).
