@@ -43,4 +43,4 @@ The latest version of the package can be downloaded from the GitHub [repository]
 
 ## Citation
 
-Citation: Gupta S, Saini V, Kumar R, Shankar R (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
+Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
