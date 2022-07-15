@@ -53,16 +53,17 @@ python3 hyper_param.py file_for_tuning
 file_for_tuning: file containing label (0/1), sequence (sequence containing pre-miRNAs and non-pre-miRNAs), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance. 
 ```
 
-
-
 ## Running script
 
 To detect the pre-miRNAs, In parent directory execute following command:
 ```
-sh M1.sh test (Sequence having length <= 400 base module 1)
-sh M2.sh t2 (Sequence having length > 400 base module 2)
-```
+sh M1.sh test (Sequence having length less than 400 base module 1)
+sh M2.sh t2 (Sequence having length more than 400 base module 2)
 
+To line plot, switch to directory name "plot/merge" and execute following command:
+
+python3 ../make-plot.py seq1.csv (filename)
+```
 
 ## Output description
 
