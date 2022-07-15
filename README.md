@@ -32,8 +32,8 @@ The latest version of the package can be downloaded from the GitHub [repository]
 ## File description
 
 ```
-1. M1.sh = Module 1 execution script. (Sequence having length less than 400 base)
-2. M2.sh = Module 2 execution script. (Sequence having length more than 400 base)
+1. M1.sh = Module 1 execution script. (Sequence having length <= 400 base)
+2. M2.sh = Module 2 execution script. (Sequence having length > 400 base)
 3. program.py = Python script for detecting pre-miRNAs from sequences provided.
 4. miWords.h5 = Trained model transformer part.
 5. miWords.sav = Trained model XGBoost part.
@@ -59,8 +59,8 @@ file_for_tuning: file containing label (0/1), sequence (sequence containing pre-
 
 To detect the pre-miRNAs, In parent directory execute following command:
 ```
-sh M1.sh test (Sequence having length less than 400 base module 1)
-sh M2.sh t2 (Sequence having length more than 400 base module 2)
+sh M1.sh test (Sequence having length <= 400 base module 1)
+sh M2.sh t2 (Sequence having length > 400 base module 2)
 ```
 
 
