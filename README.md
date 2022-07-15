@@ -54,10 +54,16 @@ file_for_tuning: file containing label (0/1), sequence (sequence containing pre-
 ```
 
 
+
 ## Running script
 
 To detect the pre-miRNAs, In parent directory execute following command:
 ```
-sh M1.sh test
-sh M2.sh t2
+sh M1.sh test (Sequence having length less than 400 base module 1)
+sh M2.sh t2 (Sequence having length more than 400 base module 2)
 ```
+
+
+## Citation
+
+Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
