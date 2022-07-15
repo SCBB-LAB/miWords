@@ -64,6 +64,18 @@ sh M2.sh t2 (Sequence having length > 400 base module 2)
 ```
 
 
+## Output description
+
+pre-miRNA detection module gives output in following format 
+```
+1. seq.txt = Chunks wise probability score of the sequence provided.
+2. plot = folder containing "csv" files to construct line plot.
+3. merge = folder containing "csv" files to construct line plot overlapping sequence.
+4. param.txt = Hyparameters for sequence side of bi-modal
+5. merge.fa = output of module 2 (Sequence, Struture Triplet, Position wise T-Score)
+6.sequence_feature.tsv = Classification result of the sequence provided.
+```
+
 ## Citation
 
 Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
