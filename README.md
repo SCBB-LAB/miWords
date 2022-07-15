@@ -43,6 +43,7 @@ The latest version of the package can be downloaded from the GitHub [repository]
 9. reve.py = Python script for sequence preprocessing.
 10. hyper_param.py = Python script build model implementing hyperparameter tuning
 11. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 base), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance.
+12. score.h5 = scoring profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/score.h5))
 ```
 
 ## To build model implementing hyperparameter tuning
