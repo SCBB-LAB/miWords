@@ -14,7 +14,6 @@ miWords can be used directly from [this](https://scbb.ihbt.res.in/miWords) web s
 
 The latest version of the package can be downloaded from the GitHub [repository](https://github.com/SCBB-LAB/miWords).
 
-
 ## Requirements
 
 ```
@@ -26,14 +25,15 @@ The latest version of the package can be downloaded from the GitHub [repository]
 6. pandas
 7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
 8. python module multiprocessing, Bio, bayesian-optimization, RNA
+9. bedops
+10. Bedtools
 ```
-
 
 ## File description
 
 ```
-1. M1.sh = Module 1 execution script. (Sequence having length <= 400 base)
-2. M2.sh = Module 2 execution script. (Sequence having length > 400 base)
+1. M1.sh = Module 1 execution script. (Sequence having length less than 400 base)
+2. M2.sh = Module 2 execution script. (Sequence having length more than 400 base)
 3. program.py = Python script for detecting pre-miRNAs from sequences provided.
 4. miWords.h5 = Trained model transformer part.
 5. miWords.sav = Trained model XGBoost part.
@@ -43,7 +43,7 @@ The latest version of the package can be downloaded from the GitHub [repository]
 9. reve.py = Python script for sequence preprocessing.
 10. hyper_param.py = Python script build model implementing hyperparameter tuning
 11. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 base), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance.
-12. score.h5 = scoring profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/score.h5))
+12. score.h5 = scoring profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/score.h5)
 ```
 
 ## To build model implementing hyperparameter tuning
@@ -75,9 +75,35 @@ pre-miRNA detection module gives output in following format
 3. merge = folder containing "csv" files to construct line plot overlapping sequence.
 4. param.txt = Hyparameters for sequence side of bi-modal
 5. merge.fa = output of module 2 (Sequence, Struture Triplet, Position wise T-Score)
+6. test.bed = output of module 2 (BED6 format) (Required for RPM module)
 6. sequence_feature.tsv = Classification result of the sequence provided.
+```
+
+## RPM module
+
+If provided with read data(sRNA-seq):
+
+## Usage
+
+```
+To convert SAM to BED6 format
+sam2bed <1.sam |cut -f1-6 >1.bed
+
+python3 program.py <fasta file> <Output from Module 2> <read data in BED6 format>
+Example: python3 program.py test test.bed 1.bed
+```
+
+## Output description
+
+```
+1. program.py = Python script for RPM module.
+2. 1.bed = read alignment data in BED6 format (converted from SAM).
+3. test = dummy fasta sequence utilized for Module 2
+4. test.bed = output from module 2 (BED6 format)
+5. test_rpm.txt = Final result (ID, Start, End, Strand, Sequence, Struture Triplet)
+6. rpm.h5 = rpm profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/rpm.h5)
 ```
 
 ## Citation
 
-Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. 
+Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. https://www.biorxiv.org/content/10.1101/2022.07.14.500029v1
