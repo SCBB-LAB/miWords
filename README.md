@@ -63,7 +63,7 @@ sh M2.sh t2 (Sequence having length more than 400 base module 2)
 
 To line plot, switch to directory name "plot/merge" and execute following command:
 
-python3 ../make-plot.py seq1.csv (filename)
+python3 RPM/make-plot.py seq1.csv (filename)
 ```
 
 ## Output description
