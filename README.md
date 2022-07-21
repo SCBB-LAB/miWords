@@ -63,7 +63,7 @@ sh M2.sh t2 (Sequence having length more than 400 base module 2)
 
 To line plot, switch to directory name "plot/merge" and execute following command:
 
-python3 RPM/make-plot.py seq1.csv (filename) (generated plots are interactive)
+python3 miWords_RPM/make-plot.py seq1.csv (filename) (generated plots are interactive)
 ```
 
 ## Output description
@@ -107,7 +107,7 @@ Example: python3 program.py test test.bed 1.bed
 6. rpm.h5 = rpm profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/rpm.h5)
 
 To plot:
-python3 RPM/make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
+python3 miWords_RPM/make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
 ```
 
 ## Citation
