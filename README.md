@@ -96,12 +96,15 @@ Example: python3 program.py test test.bed 1.bed
 ## Output description
 
 ```
-1. program.py = Python script for RPM module.
+1. miWords_rpm.py = Python script for RPM module.
 2. 1.bed = read alignment data in BED6 format (converted from SAM).
 3. test = dummy fasta sequence utilized for Module 2
 4. test.bed = output from module 2 (BED6 format)
 5. test_rpm.txt = Final result (ID, Start, End, Strand, Sequence, Struture Triplet)
 6. rpm.h5 = rpm profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/rpm.h5)
+
+To plot:
+python3 RPM/make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
 ```
 
 ## Citation
