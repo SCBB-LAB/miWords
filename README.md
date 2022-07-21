@@ -86,8 +86,11 @@ If provided with read data(sRNA-seq):
 ## Usage
 
 ```
-To convert SAM to BED6 format
-sam2bed <1.sam |cut -f1-6 >1.bed 
+Step 1: Build Genome: hisat2-build [options]* <reference_in> <ht2_index_base>
+Step 2: Mapping: hisat2 [options]* -x <ht2-idx> {-1 <m1> -2 <m2> | -U <r>} [-S <sam>]
+Step 3: To convert SAM to BED6 format: sam2bed <1.sam |cut -f1-6 >1.bed 
+
+if multiple condition are available merge into one bed file: cat *.bed >merge.bed
 
 python3 program.py <fasta file> <Output from Module 2> <read data in BED6 format>
 Example: python3 program.py test test.bed 1.bed
