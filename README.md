@@ -92,8 +92,8 @@ Step 3: To convert SAM to BED6 format: sam2bed <1.sam |cut -f1-6 >1.bed
 
 if multiple condition are available then merge them into one bed file: cat *.bed >merge.bed
 
-python3 program.py <fasta file> <Output from Module 2> <read data in BED6 format>
-Example: python3 program.py test test.bed 1.bed
+python3 miWords_rpm.py <fasta file> <Output from Module 2> <read data in BED6 format>
+Example: python3 miWords_rpm.py test test.bed 1.bed
 ```
 
 ## Output description
