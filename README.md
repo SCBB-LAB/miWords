@@ -34,7 +34,7 @@ The latest version of the package can be downloaded from the GitHub [repository]
 ```
 1. M1.sh = Module 1 execution script. (Sequence having length less than 400 base)
 2. M2.sh = Module 2 execution script. (Sequence having length more than 400 base)
-3. program.py = Python script for detecting pre-miRNAs from sequences provided.
+3. miWords.py = Python script for detecting pre-miRNAs from sequences provided.
 4. miWords.h5 = Trained model transformer part.
 5. miWords.sav = Trained model XGBoost part.
 6. test = dummy fasta sequence for Module 1.
@@ -43,7 +43,8 @@ The latest version of the package can be downloaded from the GitHub [repository]
 9. reve.py = Python script for sequence preprocessing.
 10. hyper_param.py = Python script build model implementing hyperparameter tuning
 11. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 base), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance.
-12. score.h5 = scoring profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/score.h5)
+12. score.h5 = scoring profile based CNN trained model
+13. bimodal.h5 = scoring and rpm profile based bimodal CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/bimodal.h5)
 ```
 
 ## To build model implementing hyperparameter tuning
@@ -58,12 +59,18 @@ file_for_tuning: file containing label (0/1), sequence (sequence containing pre-
 
 To detect the pre-miRNAs, In parent directory execute following command:
 ```
-sh M1.sh folderpath test (Sequence having length less than 400 base module 1)
-sh M2.sh folderpath t2 (Sequence having length more than 400 base module 2)
+Sequence having length less than 400 base module 1:
 
-To line plot, switch to directory name "plot/merge" and execute following command:
+sh M1.sh <folder path> <fasta file>
+sh M1.sh folderpath test
 
-python3 miWords_RPM/make-plot.py seq1.csv (filename) (generated plots are interactive)
+Sequence having length more than 400 base module 2:
+
+sh M2.sh <folder path> <fasta file> <Option A>
+sh M2.sh folderpath t2 A
+
+To line plot, execute the following command:
+python3 make-plot.py seq1.csv (filename) (generated plots are interactive)
 ```
 
 ## Output description
@@ -79,7 +86,7 @@ pre-miRNA detection module gives output in following format
 6. sequence_feature.tsv = Classification result of the sequence provided.
 ```
 
-## RPM module
+## RPM and bimodal(RPM and T-scoring) module
 
 If provided with read data(sRNA-seq):
 
@@ -93,7 +100,11 @@ Step 3: To convert SAM to BED6 format: sam2bed <1.sam |cut -f1-6 >1.bed
 if multiple condition are available then merge them into one bed file: cat *.bed >merge.bed
 
 python3 miWords_rpm.py <fasta file> <Output from Module 2> <read data in BED6 format>
-Example: python3 miWords_rpm.py test test.bed 1.bed
+Example: python3 miWords_rpm.py t2 test.bed 1.bed
+
+For bimodal CNN
+sh M2.sh <folder path> <fasta file> <Option B>
+sh M2.sh folderpath t2 B
 ```
 
 ## Output description
@@ -101,13 +112,13 @@ Example: python3 miWords_rpm.py test test.bed 1.bed
 ```
 1. miWords_rpm.py = Python script for RPM module.
 2. 1.bed = read alignment data in BED6 format (converted from SAM).
-3. test = dummy fasta sequence utilized for Module 2
+3. t2 = dummy fasta sequence utilized for Module 2
 4. test.bed = output from module 2 (BED6 format)
 5. test_rpm.txt = Final result (ID, Start, End, Strand, Sequence, Struture Triplet)
 6. rpm.h5 = rpm profile CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/rpm.h5)
 
 To plot:
-python3 miWords_RPM/make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
+python3 make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
 ```
 
 ## Citation
