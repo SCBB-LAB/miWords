@@ -27,6 +27,7 @@ The latest version of the package can be downloaded from the GitHub [repository]
 8. python module multiprocessing, Bio, bayesian-optimization, RNA
 9. bedops
 10. Bedtools
+11. XGBoost 1.6.2 version or higher
 ```
 
 ## File description
