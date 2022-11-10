@@ -10,11 +10,6 @@ miWords is a novel deep learning method specifically designed for pre-miRNA dete
 
 miWords can be used directly from [this](https://scbb.ihbt.res.in/miWords) web server. This server implements trained models and can process both individual sequences or fasta files. The server generates a table deciphering T-Score for every sequence provided.
 
-## Illustration to run the standalone program
-
-<p align="center">
-  <img src="Guide_miWords.png" />
-</p>
 
 ## Package installation
 
@@ -60,6 +55,13 @@ python3 hyper_param.py file_for_tuning
 
 file_for_tuning: file containing label (0/1), sequence (sequence containing pre-miRNAs and non-pre-miRNAs), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance. 
 ```
+
+## Illustration to run the standalone program
+
+<p align="center">
+  <img src="Guide_miWords.png" />
+</p>
+
 
 ## Running script
 
