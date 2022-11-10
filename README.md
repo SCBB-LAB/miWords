@@ -13,7 +13,7 @@ miWords can be used directly from [this](https://scbb.ihbt.res.in/miWords) web s
 ## Illustration to run the standalone program
 
 <p align="center">
-  <img src="https://scbb.ihbt.res.in/miWords/Guide_miWords.png" />
+  <img src="Guide_miWords.png" />
 </p>
 
 ## Package installation
