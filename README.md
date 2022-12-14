@@ -88,9 +88,9 @@ pre-miRNA detection module gives output in following format
 1. seq.txt = Chunks wise probability score of the sequence provided.
 2. plot = folder containing "csv" files to construct line plot.
 3. merge = folder containing "csv" files to construct line plot overlapping sequence.
-4. param.txt = Hyparameters for sequence side of Transformers.
+4. param.txt = Optimized hyparameters for Transformers.
 5. merge.fa = output of module 2 (Sequence, Struture Triplet, Position wise T-Score)
-6. test.bed = output of module 2 (BED6 format) (Required for RPM module)
+6. test.bed = output of module 2 (BED6 format)
 6. sequence_feature.tsv = Classification result of the sequence provided.
 ```
 
