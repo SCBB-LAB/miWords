@@ -70,12 +70,12 @@ To detect the pre-miRNAs, In parent directory execute following command:
 Sequence having length less than 400 base module 1:
 
 sh M1.sh <folder path> <fasta file>
-sh M1.sh folderpath test
+eg: sh M1.sh folderpath test
 
 Sequence having length more than 400 base module 2:
 
 sh M2.sh <folder path> <fasta file> <Option A>
-sh M2.sh folderpath t2 A
+eg: sh M2.sh folderpath t2 A
 
 To generate line plot, execute the following command:
 python3 make-plot.py seq1.csv (filename) (generated plots are interactive)
@@ -109,7 +109,7 @@ if multiple condition are available then merge them into one bed file: cat *.bed
 
 For bimodal CNN
 sh M2.sh <folder path> <fasta file> <Option B> <read data in BED6 format>
-sh M2.sh folderpath t2 B
+eg: sh M2.sh folderpath t2 B
 ```
 
 ## Output description
