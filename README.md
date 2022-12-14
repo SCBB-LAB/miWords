@@ -118,7 +118,7 @@ sh M2.sh folderpath t2 B
 1. 1.bed = read alignment data in BED6 format (converted from SAM).
 2. t2 = dummy fasta sequence utilized for Module 2
 3. test.bed = output from module 2 (BED6 format)
-4 test_rpm.txt = Final result (ID, Start, End, Strand, Sequence, Struture Triplet)
+4. test_rpm.txt = Final result (ID, Start, End, Strand, Sequence, Struture Triplet)
 
 To plot:
 python3 make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
