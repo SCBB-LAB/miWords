@@ -24,7 +24,7 @@ The latest version of the package can be downloaded from the GitHub [repository]
 4. tensorflow
 5. plotly
 6. pandas
-7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
+7. RNAfold (ViennaRNA package download it from [here](https://www.tbi.univie.ac.at/RNA/)
 8. python module multiprocessing, Bio, bayesian-optimization, RNA, XGBoost 1.6.2 version or higher
 9. bedops
 10. Bedtools
