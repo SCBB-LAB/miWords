@@ -77,7 +77,7 @@ Sequence having length more than 400 base module 2:
 sh M2.sh <folder path> <fasta file> <Option A>
 sh M2.sh folderpath t2 A
 
-To line plot, execute the following command:
+To generate line plot, execute the following command:
 python3 make-plot.py seq1.csv (filename) (generated plots are interactive)
 ```
 
@@ -94,7 +94,7 @@ pre-miRNA detection module gives output in following format
 6. sequence_feature.tsv = Classification result of the sequence provided.
 ```
 
-## RPM and bimodal(RPM and T-scoring) module
+## bimodal(RPM and T-scoring) module
 
 If provided with read data(sRNA-seq):
 
@@ -107,11 +107,8 @@ Step 3: To convert SAM to BED6 format: sam2bed <1.sam |cut -f1-6 >1.bed
 
 if multiple condition are available then merge them into one bed file: cat *.bed >merge.bed
 
-python3 miWords_rpm.py <fasta file> <Output from Module 2> <read data in BED6 format>
-Example: python3 miWords_rpm.py t2 test.bed 1.bed
-
 For bimodal CNN
-sh M2.sh <folder path> <fasta file> <Option B>
+sh M2.sh <folder path> <fasta file> <Option B> <read data in BED6 format>
 sh M2.sh folderpath t2 B
 ```
 
