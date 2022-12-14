@@ -94,7 +94,7 @@ pre-miRNA detection module gives output in following format
 6. sequence_feature.tsv = Classification result of the sequence provided.
 ```
 
-## bimodal(RPM and T-scoring) module
+## Bimodal (RPM and T-scoring) CNN module
 
 If provided with read data(sRNA-seq):
 
