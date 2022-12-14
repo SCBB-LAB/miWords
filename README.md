@@ -101,7 +101,8 @@ If provided with read data(sRNA-seq):
 ## Usage
 
 ```
-User needs to process the <b>fastq file</b> into <b>bed6 format</b> by instructions mentioned below (Note: User can select their own mapping software)
+User needs to process the fastq file into bed6 format by instructions mentioned below (Note: User can select their own mapping software)
+
 Step 1: Build Genome: hisat2-build [options]* <reference_in> <ht2_index_base>
 Step 2: Mapping: hisat2 [options]* -x <ht2-idx> {-1 <m1> -2 <m2> | -U <r>} [-S <sam>]
 Step 3: To convert SAM to BED6 format: sam2bed <read.sam |cut -f1-6 >read.bed 
