@@ -103,9 +103,9 @@ If provided with read data(sRNA-seq):
 ```
 Step 1: Build Genome: hisat2-build [options]* <reference_in> <ht2_index_base>
 Step 2: Mapping: hisat2 [options]* -x <ht2-idx> {-1 <m1> -2 <m2> | -U <r>} [-S <sam>]
-Step 3: To convert SAM to BED6 format: sam2bed <1.sam |cut -f1-6 >read.bed 
+Step 3: To convert SAM to BED6 format: sam2bed <read.sam |cut -f1-6 >read.bed 
 
-if multiple condition are available then merge them into one bed file: cat *.bed >merge.bed
+if multiple condition are available then merge them into one bed file: cat *.bed >read.bed
 
 For bimodal CNN
 sh M2.sh <folder path> <fasta file> <Option B> <read data in BED6 format>
