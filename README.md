@@ -91,7 +91,7 @@ pre-miRNA detection module gives output in following format
 4. param.txt = Optimized hyparameters for Transformers.
 5. merge.fa = output of module 2 (Sequence, Struture Triplet, Position wise T-Score)
 6. test.bed = output of module 2 (BED6 format)
-6. sequence_feature.tsv = Classification result of the sequence provided.
+7. sequence_feature.tsv = Classification result of the sequence provided.
 ```
 
 ## Bimodal (RPM and T-scoring) CNN module
