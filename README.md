@@ -1,5 +1,9 @@
 # miWords
 
+<p align="center">
+  <img src="logo.png" />
+</p>
+
 Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery
 
 miRNAs are prime regulatory small RNAs (sRNAs) having ~21 bases length which post-transcriptionally regulate most of the genes and stand critical for most of the processes of eukaryotic cells including their development and specialization. miRNAs can be found in the intronic as well as intergenic regions. Mature miRNAs are derived from longer precursor miRNA molecules (pre-miRNAs) which are double-stranded RNAs (dsRNAs) with terminal hairpin loop.
