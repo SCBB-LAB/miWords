@@ -48,6 +48,12 @@ The latest version of the package can be downloaded from the GitHub [repository]
 13. bimodal.h5 = scoring and rpm profile based bimodal CNN trained model (Download form (https://scbb.ihbt.res.in/miWords/bimodal.h5)
 ```
 
+## Illustration to run the standalone program
+
+<p align="center">
+  <img src="Guide_miWords.png" />
+</p>
+
 ## To build model implementing hyperparameter tuning
 
 ```
@@ -55,13 +61,6 @@ python3 hyper_param.py file_for_tuning
 
 file_for_tuning: file containing label (0/1), sequence (sequence containing pre-miRNAs and non-pre-miRNAs), and dot bracket ("(">"M", ".">"O", ")">"N"). All in one line separated by tab for a single instance. 
 ```
-
-## Illustration to run the standalone program
-
-<p align="center">
-  <img src="Guide_miWords.png" />
-</p>
-
 
 ## Running script
 
