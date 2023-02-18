@@ -131,4 +131,4 @@ python3 make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
 
 ## Citation
 
-Citation: Gupta S, Saini V, Kumar R, Shankar R* (2022) Sentences, Words, Attention: A “Transforming” Aphorism of miRNA Discovery. bioRxiv 2022. https://www.biorxiv.org/content/10.1101/2022.07.14.500029v2
+Citation: Gupta S, Shankar R* (2022) miWords: Transformers based composite deep-learning for highly accurate discovery of pre-miRNA regions across plant genomes. Accepted 2023. 
