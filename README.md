@@ -131,4 +131,4 @@ python3 make-plot_rpm.py seq1.csv (filename) (generated plots are interactive)
 
 ## Citation
 
-Citation: Gupta S, Shankar R* (2022) miWords: Transformers based composite deep-learning for highly accurate discovery of pre-miRNA regions across plant genomes. Accepted 2023. 
+Citation: Gupta S, Shankar R* (2023) miWords: Transformers based composite deep-learning for highly accurate discovery of pre-miRNA regions across plant genomes. Accepted 2023. 
